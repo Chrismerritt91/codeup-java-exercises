@@ -31,7 +31,7 @@ public class JavaSyntaxLectureFollow {
 //        System.out.println(big);
 
         smol = (byte) big;
-//        System.out.println(smol);
+        System.out.println(smol);
 
         float imaFloat;
         double imaDouble = 9.012345678901;
