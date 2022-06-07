@@ -13,15 +13,15 @@ public class ConsoleExercises {
         int inputInt = scanner.nextInt();
         // input hello, exception to main error appeared
 
-        System.out.println("Please enter three words, one at a time: ");
-        String first =scanner.next() + scanner.nextLine();
-        String second = scanner.nextLine();
-        String third = scanner.nextLine();
-        System.out.printf("Your words were:%n %s,%n %s,%n %s%n", first, second, third);
-        //if you dont enter a third word it will not run and if you hit enter it will display an empty line.
+        System.out.println("Please enter three words: ");
+        for(int i = 0; i < 3; i++){
+            String userInput = scanner.next();
+            System.out.printf("%s%n", userInput);
+        }
+        //if you dont enter a third word it will not continue to the next function until you do.
 
         System.out.println("Please enter a sentence: ");
-        String userIn = scanner.nextLine();
+        String userIn = scanner.next() + scanner.nextLine();
         System.out.printf("The sentence you entered was:%n %s%n", userIn);
         // if you only use next it will only display the next word not the whole string, if you use the nextline method it will show the whole string.
 
