@@ -47,16 +47,16 @@ public class ConsoleIOLecture {
 
         //#3 concatenate scanner.next() to absorb the keystroke
 
-        System.out.println("Enter an integer:");
-        int userInput = scanner.nextInt();
-        System.out.printf("The number you entered was %d%n", userInput);
-
-        String first;
-        String second;
-        System.out.println("Please enter a sentence: ");
-        first = scanner.next() + scanner.nextLine();
-        System.out.println("Please enter another sentence: ");
-        second = scanner.nextLine();
-        System.out.println("First sentence: " + first + "\n second sentence: " + second);
+//        System.out.println("Enter an integer:");
+//        int userInput = scanner.nextInt();
+//        System.out.printf("The number you entered was %d%n", userInput);
+//
+//        String first;
+//        String second;
+//        System.out.println("Please enter a sentence: ");
+//        first = scanner.next() + scanner.nextLine();
+//        System.out.println("Please enter another sentence: ");
+//        second = scanner.nextLine();
+//        System.out.println("First sentence: " + first + "\n second sentence: " + second);
     }
 }
