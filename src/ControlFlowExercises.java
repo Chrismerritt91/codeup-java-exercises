@@ -63,25 +63,23 @@ public class ControlFlowExercises {
 //        }
 
         //3.
-        Scanner scanner = new Scanner(System.in);
-//        boolean willContinue = true;
-//        do {
-//            System.out.println("What number would you like to go up to?");
-//            int input = scanner.nextInt();
-//            System.out.printf("Here is your table!%n");
-//            System.out.printf("number | squared | cubed%n");
-//            System.out.printf("------ | ------- | -----%n");
-//            for (int i = 1; i <= input; i++) {
-//                System.out.println(i + "      | " + (i * i) + "       | " + (i * i * i) + "     ");
-//            }
-//            System.out.println("Would you like to continue?");
-//            String userResponse = scanner.next();
-//            if (userResponse.equalsIgnoreCase("y")) {
-//                willContinue = true;
-//            } else {
-//                willContinue = false;
-//            }
-//        }while(willContinue);
+        boolean willContinue = true;
+        do {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("What number would you like to go up to?");
+            int input = scanner.nextInt();
+            System.out.printf("Here is your table!%n");
+            System.out.printf("number | squared | cubed%n");
+            System.out.printf("------ | ------- | -----%n");
+            for (int i = 1; i <= input; i++) {
+                System.out.println(i + "      | " + (i * i) + "       | " + (i * i * i) + "     ");
+            }
+            System.out.println("Would you like to continue?");
+            String userResponse = scanner.next();
+            if (userResponse.equalsIgnoreCase("y")) {
+                willContinue = false;
+            }
+        }while(willContinue);
 
         //4.
 //        boolean anotherGrade = true;

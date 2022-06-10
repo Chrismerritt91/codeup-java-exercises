@@ -32,3 +32,4 @@ public class HighLow {
         highLow();
     }
 }
+// checkout binary search algorithm
