@@ -18,17 +18,13 @@ public class Input {
     }
 
     public boolean yesNo(){
-        System.out.println("Give a yes or no answer: ");
-        String userInput = scanner.nextLine();
-        if(userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes")){
-            return true;
-        }else {
-            return false;
-        }
+        System.out.println("Give a yes or no answer: (y/n)");
+        String userInput = scanner.next();
+        return userInput.equalsIgnoreCase("y");
     }
 
     public int getInt(int min, int max){
-        System.out.println("Enter a number between 1 and 10");
+        System.out.println("Enter a number between " + min + " and " + max + ":");
         int userInt = scanner.nextInt();
         if(userInt >= min && userInt <= max){
             return userInt;
@@ -40,8 +36,7 @@ public class Input {
 
     public int getInt(){
         System.out.println("Enter a number: ");
-        int userInt = scanner.nextInt();
-        return userInt;
+        return scanner.nextInt();
    }
 
    public double getDouble(double min, double max){
@@ -57,7 +52,11 @@ public class Input {
 
    public double getDouble(){
        System.out.println("Please enter number: ");
-       double userNum = scanner.nextDouble();
-       return userNum;
+       return scanner.nextDouble();
+   }
+
+   public double getDouble(String prompt){
+       System.out.println(prompt);
+       return scanner.nextDouble();
    }
 }
