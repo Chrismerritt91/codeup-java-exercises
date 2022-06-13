@@ -49,7 +49,7 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //
 //        }
-                //or
+        //or
 //        for (int i = 1; i <= 100; i++) {
 //            if(i % 3 == 0 && i % 5 == 0){
 //                System.out.println("FizzBuzz");
@@ -63,53 +63,59 @@ public class ControlFlowExercises {
 //        }
 
         //3.
-        boolean willContinue = true;
-        do {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("What number would you like to go up to?");
-            int input = scanner.nextInt();
-            System.out.printf("Here is your table!%n");
-            System.out.printf("number | squared | cubed%n");
-            System.out.printf("------ | ------- | -----%n");
-            for (int i = 1; i <= input; i++) {
-                System.out.println(i + "      | " + (i * i) + "       | " + (i * i * i) + "     ");
-            }
-            System.out.println("Would you like to continue?");
-            String userResponse = scanner.next();
-            if (userResponse.equalsIgnoreCase("y")) {
-                willContinue = false;
-            }
-        }while(willContinue);
+//        boolean willContinue = false;
+//        do {
+//            Scanner scanner = new Scanner(System.in);
+//            System.out.println("What number would you like to go up to?");
+//            int input = scanner.nextInt();
+//            System.out.printf("Here is your table!%n");
+//            System.out.printf("number | squared | cubed%n");
+//            System.out.printf("------ | ------- | -----%n");
+//            for (int i = 1; i <= input; i++) {
+//                System.out.println(i + "      | " + (i * i) + "       | " + (i * i * i) + "     ");
+//            }
+//            System.out.println("Would you like to continue? (y/n)");
+//            String userResponse = scanner.next();
+//            if (userResponse.equalsIgnoreCase("y")) {
+//                willContinue = true;
+//            }else{
+//                willContinue = false;
+//            }
+//        }while(willContinue);
 
         //4.
-//        boolean anotherGrade = true;
-//        do{
-//        System.out.println("What was your score?");
-//        int input = scanner.nextInt();
-//        if (input <= 100 && input >= 95) {
-//            System.out.println("A+");
-//        } else if (input <= 94 && input >= 88) {
-//            System.out.println("A-");
-//        } else if (input <= 87 && input >= 84) {
-//            System.out.println("B+");
-//        } else if (input <= 83 && input >= 80) {
-//            System.out.println("B-");
-//        } else if (input <= 79 && input >= 74) {
-//            System.out.println("C+");
-//        } else if (input <= 73 && input >= 67) {
-//            System.out.println("C-");
-//        } else if (input <= 66 && input >= 64) {
-//            System.out.println("D+");
-//        } else if (input <= 63 && input >= 60) {
-//            System.out.println("D-");
-//        } else {
-//            System.out.println("F");
-//        }
-//        System.out.println("Would you like to continue?");
-//        String userResponse = scanner.next();
-//        if (!userResponse.equalsIgnoreCase("y")) {
-//            anotherGrade = false;
-//        }}while(anotherGrade);
+        Scanner scanner = new Scanner(System.in);
+
+        boolean anotherGrade = true;
+
+        do {
+            System.out.println("What was your score?");
+            int input = scanner.nextInt();
+            if (input <= 100 && input >= 95) {
+                System.out.println("A+");
+            } else if (input <= 94 && input >= 88) {
+                System.out.println("A-");
+            } else if (input <= 87 && input >= 84) {
+                System.out.println("B+");
+            } else if (input <= 83 && input >= 80) {
+                System.out.println("B-");
+            } else if (input <= 79 && input >= 74) {
+                System.out.println("C+");
+            } else if (input <= 73 && input >= 67) {
+                System.out.println("C-");
+            } else if (input <= 66 && input >= 64) {
+                System.out.println("D+");
+            } else if (input <= 63 && input >= 60) {
+                System.out.println("D-");
+            } else {
+                System.out.println("F");
+            }
+            System.out.println("Would you like to continue? (y/n)");
+            String userResponse = scanner.next();
+            if (!userResponse.equalsIgnoreCase("y")) {
+                anotherGrade = false;
+            }
+        } while (anotherGrade);
 
 
     }
