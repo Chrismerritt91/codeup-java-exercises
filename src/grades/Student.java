@@ -27,6 +27,6 @@ public class Student {
             total += grade;
         }
         return Double.parseDouble(String.format("%.2f", total / length));
-    }
+    } // the parseDouble with string.format is to limit the spaces after the decimal without using souf
 
 }

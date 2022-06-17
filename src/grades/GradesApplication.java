@@ -36,6 +36,7 @@ public class GradesApplication {
         //command line output
         System.out.println("Welcome!\n");
         System.out.println("Here are the Github usernames of our students:\n");
+        //this is how to loop a hashmap do not forget the .entryset()
         for (Map.Entry<String, Student> student :
                 students.entrySet()) {
             System.out.print("|" + student.getKey() + "|" + " ");

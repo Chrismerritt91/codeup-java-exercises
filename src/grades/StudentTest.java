@@ -22,7 +22,7 @@ public class StudentTest {
         steve.addGrade(98);
         steve.addGrade(99);
 
-        steve.getGradeAverage();
+        System.out.println(steve.getGradeAverage());
 
 
     }

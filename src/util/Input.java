@@ -11,14 +11,24 @@ public class Input {
        this.scanner = new Scanner(System.in);
    }
 
-    public String getString(String prompt){
+    public String getString(){
         System.out.println("Enter a string: ");
-        String userInput = scanner.nextLine();
-        return prompt + userInput;
+        return scanner.nextLine();
+    }
+
+    public String getString(String prompt){
+        System.out.println(prompt);
+        return scanner.nextLine();
     }
 
     public boolean yesNo(){
         System.out.println("Give a yes or no answer: (y/n)");
+        String userInput = scanner.next();
+        return userInput.equalsIgnoreCase("y");
+    }
+
+    public boolean yesNo(String prompt){
+        System.out.println(prompt + " (y/n)");
         String userInput = scanner.next();
         return userInput.equalsIgnoreCase("y");
     }
