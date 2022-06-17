@@ -28,7 +28,7 @@ public class Input {
     }
 
     public boolean yesNo(String prompt){
-        System.out.println(prompt + " (y/n)");
+        System.out.println(prompt + "(y/n)");
         String userInput = scanner.next();
         return userInput.equalsIgnoreCase("y");
     }
@@ -45,12 +45,16 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("Enter a number: ");
-        return scanner.nextInt();
+       return getInt("enter number:");
    }
    public int getInt(String prompt){
-       System.out.println(prompt);
-       return scanner.nextInt();
+       try {
+           String input = getString(prompt);
+           return Integer.valueOf(input);
+       }catch(NumberFormatException e){
+           System.out.println("uh oh this isn't an int");
+           return getInt("re-enter number");
+       }
    }
 
    public double getDouble(double min, double max){
@@ -65,12 +69,17 @@ public class Input {
    }
 
    public double getDouble(){
-       System.out.println("Please enter number: ");
-       return scanner.nextDouble();
+       return getDouble("enter number:");
    }
 
    public double getDouble(String prompt){
-       System.out.println(prompt);
-       return scanner.nextDouble();
+       try{
+           String input = getString(prompt);
+           return Double.valueOf(input);
+       }catch(NumberFormatException e){
+           System.out.println("uh oh thats not a number");
+           return getDouble("re-enter number:");
+       }
+
    }
 }

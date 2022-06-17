@@ -11,6 +11,8 @@ public class InputTest {
 //        input.getInt(1, 30);
 //        input.getInt();
 //        System.out.println( input.yesNo());
+//        System.out.println(input.getInt());
+        System.out.println(input.getDouble());
 
     }
 }
